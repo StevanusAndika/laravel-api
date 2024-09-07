@@ -15,9 +15,7 @@ use App\Http\Controllers\CarController;
 */
 
 // Default route to show the welcome page
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 // Resource routes for managing cars
 Route::apiResource('cars', CarController::class);
